@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y Descuentos</title>
+</head>
+<body>
+    <form action="">
+        <label for="precioProducto">Prodcuto a comprar</label>
+        <select name="listaProducto" id="listaProducto" required>
+            <option value="" disabled selected>Seleccione una opción</option>
+            <option value="500" >Pan $500 COP</option>
+            <option value="1000">Azucar $1000 COP</option>
+            <option value="600">Arroz $600 COP</option>
+            <option value="2500">Café $2500 COP</option>
+            <option value="900">Sal $900 COP</option>
+        </select>
+        <select name="descuentoProducto" id="descuentoProducto">
+            <option value="10">10% de descuento</option>
+            <option value="20">20% de descuento</option>
+            <option value="30">30% de descuento</option>
+            <option value="40">40% de descuento</option>
+            <option value="50">50% de descuento</option>
+            <option value="60">60% de descuento</option>
+            <option value="70">70% de descuento</option>
+            <option value="80">80% de descuento</option>
+            <option value="90">90% de descuento</option>
+            <option value="100">100% de descuento</option>
+        </select>
+        <button type="button" onclick="seleccionarProducto()">Seleccionar</button>
+    </form>
+    <section>
+        <p id="ResultP"></p>
+    </section>
+    <script src="./formulas.js"></script>
+</body>
+</html>
