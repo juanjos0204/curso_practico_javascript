@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Reto con cupones</h1>
+    <form action="">
+      <section>
+        <label for="">Ingrese el valor del producto</label>
+        <input type="number" id="valorProducto" autocomplete="none"/>
+      </section>
+      <label for=""
+        >Por favor ingresa el código del cupón</label
+      >
+      <input type="text" id="tokenManual" onkeyup="disable()" autocomplete="none"/>
+      <section>
+        <label for="">O puedes escoger uno de la lista desplegable</label>
+        <select name="tokenAutomatico" id="tokenAutomatico" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="5">5%</option>
+          <option value="10">10%</option>
+          <option value="15">15%</option>
+        </select>
+        <section>
+        <button type="button" onclick="enviar()">Calcular</button>
+        </section>
+      </section>
+    </form>
+    <section id="salida">
+    </section>
+    <script src="./cuponera.js"></script>
+  </body>
+</html>
