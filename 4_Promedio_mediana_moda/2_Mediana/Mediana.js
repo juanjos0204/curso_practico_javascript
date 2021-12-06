@@ -1,16 +1,25 @@
-function calcularMediaAritmetica(lista) {
-    // let sumaLista = 0;
-    // for (let i = 0; i < lista.length; i++) {
-    //     sumaLista += lista[i];
-    // }
-    
-    const sumaLista = lista.reduce(
-        function (valorAcumulado = 0, nuevoElemento){
-            return valorAcumulado + nuevoElemento;
-        }
-    );
-    
-    const promedioLista = sumaLista / lista.length;
-    
-    return promedioLista;
+const lista1 = [
+    100,
+    200,
+    500,
+    800,
+    4000000000,
+];
+
+const mitadLista1 = parseInt(lista1.length / 2);
+
+function esPar(valorNumero) {
+    if (valorNumero % 2 == 0) {
+        return true;
+    }else {
+        return false;
+    }
 }
+
+let mediana;
+
+if (esPar(lista1.length) == true){
+
+}else {
+    mediana =  lista1[mitadLista1]
+} 
